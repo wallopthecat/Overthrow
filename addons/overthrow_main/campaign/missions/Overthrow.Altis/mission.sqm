@@ -8,7 +8,7 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=2162;
+		nextID=2165;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=414;
+		nextID=424;
 	};
 	class Camera
 	{
@@ -57,13 +57,14 @@ addons[]=
 	"A3_Structures_F_Exp_Industrial_Port",
 	"A3_Structures_F_Ind_Cargo",
 	"A3_Boat_F_Gamma_Boat_Civil_04",
-	"A3_Structures_F_Ind_Transmitter_Tower"
+	"A3_Structures_F_Ind_Transmitter_Tower",
+	"Werthles_WHK"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=25;
+		items=26;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -238,6 +239,11 @@ class AddonsMetaData
 			name="Arma 3 - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item25
+		{
+			className="Werthles_WHK";
+			name="Werthles_WHK";
 		};
 	};
 };
@@ -693,7 +699,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=87;
+		items=90;
 		class Item0
 		{
 			dataType="Layer";
@@ -6852,6 +6858,294 @@ class Mission
 			alpha=0;
 			id=2161;
 			atlOffset=4.2761655;
+		};
+		class Item87
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4187.8911,47.121262,12237.185};
+			};
+			name="HeadlessClient";
+			isPlayable=1;
+			id=2162;
+			type="HeadlessClient_F";
+		};
+		class Item88
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4173.04,48.044697,12231.707};
+			};
+			id=2163;
+			type="Werthles_moduleWHM";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Werthles_moduleWHM_Ignores";
+					expression="_this setVariable ['Ignores',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Werthles_moduleWHM_Debug";
+					expression="_this setVariable ['Debug',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Werthles_moduleWHM_UseServer";
+					expression="_this setVariable ['UseServer',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Werthles_moduleWHM_Wait";
+					expression="_this setVariable ['Wait',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Werthles_moduleWHM_NoDebug";
+					expression="_this setVariable ['NoDebug',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="Werthles_moduleWHM_Advanced";
+					expression="_this setVariable ['Advanced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="Werthles_moduleWHM_Units";
+					expression="_this setVariable ['Units',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="Werthles_moduleWHM_Pause";
+					expression="_this setVariable ['Pause',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="Werthles_moduleWHM_Delay";
+					expression="_this setVariable ['Delay',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=60;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="Werthles_moduleWHM_DebugOnly";
+					expression="_this setVariable ['DebugOnly',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="Werthles_moduleWHM_Repeating";
+					expression="_this setVariable ['Repeating',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="Werthles_moduleWHM_Report";
+					expression="_this setVariable ['Report',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=12;
+			};
+		};
+		class Item89
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4157.9653,48.888916,12228.087};
+			};
+			id=2164;
+			type="Werthles_moduleWHIgnore";
+			atlOffset=-1.9073486e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Werthles_moduleWHIgnore_Units";
+					expression="_this setVariable ['Units',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="-666";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
